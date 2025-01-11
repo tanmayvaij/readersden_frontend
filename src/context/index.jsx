@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const context = createContext();
 
-const apiUrl = process.env.REACT_APP_BACKEND_URL;
+const apiUrl = process.env.REACT_APP_BACKEND_URL|| "http://localhost:5000" ;
 
 export default function Context({ children }) {
   const [user, setUser] = useState({});
